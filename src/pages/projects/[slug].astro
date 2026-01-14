@@ -250,4 +250,18 @@ const { Content } = project;
       });
     }
   </script>
+
+
+
+{project.links?.video && (
+  <div class="mt-10 aspect-video rounded-xl overflow-hidden border border-white/10">
+    <iframe
+      src={project.links.video}
+      class="w-full h-full"
+      loading="lazy"
+      allowfullscreen
+    />
+  </div>
+)}
+
 </Base>
